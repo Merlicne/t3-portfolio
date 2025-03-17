@@ -3,7 +3,6 @@ import "@/styles/globals.css";
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 import { Provider } from "../components/ui/provider";
-import NavBar from "@/components/nav/navBar";
 
 export const metadata: Metadata = {
   title: "Create T3 App",
@@ -18,7 +17,6 @@ export default function RootLayout({
     <html lang="en" className={`${GeistSans.variable}`} suppressHydrationWarning>
       <body>
         <Provider >
-          <NavBar />
           {children}
         </Provider>
       </body>

@@ -1,3 +1,4 @@
+import NavBar from "@/components/nav/navBar";
 import { handleSignOut, signInWithGithub } from "@/server/action/auth";
 import { auth } from "@/server/auth";
 
@@ -8,6 +9,8 @@ export default async function HomePage() {
 
 
   return (
+    <>
+    <NavBar />
     <main className="flex min-h-screen flex-col items-center justify-center">
       <h1 className="text-4xl font-bold">Welcome to Merl-App</h1>
       {
@@ -26,5 +29,6 @@ export default async function HomePage() {
       }
 
     </main>
+      </>
   );
 }
